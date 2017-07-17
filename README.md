@@ -13,6 +13,6 @@ Flask: <br>
 http://flask.pocoo.org/ <br>
 <br>
 <br>
-*Warning: This program is still working in progress. <br>
+*Warning: This program is still working in progress. (Guessing this project will finish in this year at the most) <br>
 *Warning: This program is tested on python 3.5 (May work with python2, but not yet tested, and possibly will not get tested) <br>
 *Warning: This program is tested on Raspberry Pi 3 Model B (May work with other models but the GPIO pins might have to be changed) <br>

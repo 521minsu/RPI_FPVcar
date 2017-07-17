@@ -43,6 +43,7 @@ GPIO.setup(Motor2E, GPIO.OUT)
 
 
 def control(joystick_angle):
+    joystick_angle=int(joystick_angle)
     if joystick_angle > 114 and joystick_angle < 159:
         drive_one()
         print('Top Left')

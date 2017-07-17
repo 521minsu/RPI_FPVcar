@@ -43,6 +43,38 @@ GPIO.setup(Motor2B, GPIO.OUT)
 GPIO.setup(Motor2E, GPIO.OUT)
 
 
+def control(joystick_angle):
+    if joystick_angle > 114 and joystick_angle < 159:
+        drive_one()
+        print('Top Left')
+    elif joystick_angle > 69 and joystick_angle < 114:
+        drive_two()
+        print('Top Middle')
+    elif joystick_angle > 22 and joystick_angle < 69:
+        drive_three()
+        print('Top Right')
+    elif joystick_angle > 159 and joystick_angle < 180 or joystick_angle > -180 and joystick_angle < -159:
+        drive_four()
+        print('Left')
+    elif joystick_angle == 360:
+        drive_five()
+        print('STOP')
+    elif joystick_angle > -22 and joystick_angle < 22:
+        drive_six()
+        print('Right')
+    elif joystick_angle > -159 and joystick_angle < -114:
+        drive_seven()
+        print('Bottom Left')
+    elif joystick_angle > -114 and joystick_angle < -69:
+        drive_eight()
+        print('Bottom Middle')
+    elif joystick_angle > -69 and joystick_angle < -22:
+        drive_nine()
+        print('Bottom Right')
+    else:
+        print('Unknown value of joystick_angle - Exiting the loop...')
+
+
 def motor1(direction):
     if direction == 1:  # Change the number 1 to 0 if the robot drives in the opposite way
         GPIO.output(Motor1A, GPIO.HIGH)

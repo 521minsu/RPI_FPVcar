@@ -7,15 +7,14 @@
 ####################################
 
 from flask import Flask
+import motor_control
 
+motor = motor_control
 app = Flask(__name__)
 
 
-@app.route('/flask')
-def hello_world():
-    return 'This comes from Flask ^_^'
-
-
-@app.route('/servo/<angle>')
-def control_servo(angle):
-    return 'Angle: {}'.format(angle)
+@app.route('/motor/<joystick_angle>')
+def motor_control_call(joystick_angle):
+    motor.control(joystick_angle)
+    print('Received Motor dir: {}'.format(joystick_angle))
+    return 'Received Motor dir: {}'.format(joystick_angle)

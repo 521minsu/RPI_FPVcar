@@ -12,11 +12,6 @@ from tornado.web import FallbackHandler, RequestHandler, Application
 
 from flasky import app
 
-import motor_control
-
-motor = motor_control
-
-
 class MainHandler(RequestHandler):
     def get(self):
         self.write("This message comes from Tornado ^_^")

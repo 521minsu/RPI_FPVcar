@@ -12,7 +12,12 @@ http://www.tornadoweb.org/en/stable/ <br>
 Flask: <br>
 http://flask.pocoo.org/ <br>
 <br>
+# To run this program
+1. Clone or download and unzip this repo into your Raspberry Pi  <br>
+2. cd into the directory <br>
+3. issue following command on ssh or terminal: $ sudo python3 main.py (You may try python, but this program is tested on 3.5) <br>
 <br>
+*Warning: DON'T FORGET TO INSTALL MODULES IN PYTHON3 <br>
 *Warning: This program is still working in progress. (Guessing this project will finish in this year at the most) <br>
 *Warning: This program is tested on python 3.5 (May work with python2, but not yet tested, and possibly will not get tested) <br>
 *Warning: This program is tested on Raspberry Pi 3 Model B (May work with other models but the GPIO pins might have to be changed) <br>

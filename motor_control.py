@@ -43,12 +43,12 @@ GPIO.setup(Motor2B, GPIO.OUT)
 GPIO.setup(Motor2E, GPIO.OUT)
 
 
-def motor1(dir):
-    if dir == 1:  # Change the number 1 to 0 if the robot drives in the opposite way
+def motor1(direction):
+    if direction == 1:  # Change the number 1 to 0 if the robot drives in the opposite way
         GPIO.output(Motor1A, GPIO.HIGH)
         GPIO.output(Motor1B, GPIO.LOW)
         GPIO.output(Motor1E, GPIO.HIGH)
-    elif dir == -1:
+    elif direction == -1:
         GPIO.output(Motor1A, GPIO.LOW)
         GPIO.output(Motor1B, GPIO.HIGH)
         GPIO.output(Motor1E, GPIO.HIGH)
@@ -56,12 +56,12 @@ def motor1(dir):
         GPIO.output(Motor1E, GPIO.LOW)
 
 
-def motor2(dir):
-    if dir == 1:  # Change the number 1 to 0 if the robot drives in the opposite way
+def motor2(direction):
+    if direction == 1:  # Change the number 1 to 0 if the robot drives in the opposite way
         GPIO.output(Motor2A, GPIO.HIGH)
         GPIO.output(Motor2B, GPIO.LOW)
         GPIO.output(Motor2E, GPIO.HIGH)
-    elif dir == -1:
+    elif direction == -1:
         GPIO.output(Motor2A, GPIO.LOW)
         GPIO.output(Motor2B, GPIO.HIGH)
         GPIO.output(Motor2E, GPIO.HIGH)
@@ -70,18 +70,18 @@ def motor2(dir):
 
 
 def drive_one():
-    motor1(0)  # Stops motor1
-    motor2(1)  # Spins motor2 clockwise
+    motor1(0)   # Stops motor1
+    motor2(1)   # Spins motor2 clockwise
 
 
 def drive_two():
-    motor1(1)  # Spins motor1 clockwise
-    motor2(1)  # Spins motor2 clockwise
+    motor1(1)   # Spins motor1 clockwise
+    motor2(1)   # Spins motor2 clockwise
 
 
 def drive_three():
-    motor1(1)  # Spins motor1 clockwise
-    motor2(0)  # Stops motor2
+    motor1(1)   # Spins motor1 clockwise
+    motor2(0)   # Stops motor2
 
 
 def drive_four():
@@ -90,8 +90,8 @@ def drive_four():
 
 
 def drive_five():
-    motor1(0)  # Stops motor1
-    motor2(0)  # Stops motor2
+    motor1(0)   # Stops motor1
+    motor2(0)   # Stops motor2
 
 
 def drive_six():

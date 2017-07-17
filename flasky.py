@@ -21,8 +21,14 @@ def motor_control_call(joystick_angle):
     print('Received Motor dir: {}'.format(joystick_angle))
     return 'Received Motor dir: {}'.format(joystick_angle)
 
+
 @app.route('/servo/<servo_angle>')
 def servo_control_call(servo_angle):
     servo.control(servo_angle)
     print('Received Servo ang: {}'.format(servo_angle))
     return 'Received Servo ang: {}'.format(servo_angle)
+
+
+@app.route('/flasky')
+def flasky():
+    return "Hello I'm Flasky ㅇㅅㅇ"

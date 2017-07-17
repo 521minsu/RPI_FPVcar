@@ -12,6 +12,9 @@ http://www.tornadoweb.org/en/stable/ <br>
 Flask: <br>
 http://flask.pocoo.org/ <br>
 <br>
+Picam apache live stream: <br>
+https://www.sitepoint.com/streaming-a-raspberry-pi-camera-into-vr-with-javascript/ <br>
+<br>
 # To run this program <br>
 1. Clone or download and unzip this repo into your Raspberry Pi  <br>
 2. cd into the directory <br>

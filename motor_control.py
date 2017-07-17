@@ -36,7 +36,6 @@ Motor2E = 19  # Enable Pin
 GPIO.setup(Motor1A, GPIO.OUT)
 GPIO.setup(Motor1B, GPIO.OUT)
 GPIO.setup(Motor1E, GPIO.OUT)
-
 # Setting Motor2 Pins as Output
 GPIO.setup(Motor2A, GPIO.OUT)
 GPIO.setup(Motor2B, GPIO.OUT)
